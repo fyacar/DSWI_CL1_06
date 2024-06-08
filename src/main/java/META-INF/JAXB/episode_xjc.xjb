@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2024.06.08 a las 03:59:18 PM PET 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.cibertec.edu.pe/ws/objects">
+    <schemaBindings map="false">
+      <package name="pe.edu.cibertec.ws.objects"/>
+    </schemaBindings>
+    <bindings scd="tns:getPuedeJubilarseRequest">
+      <class ref="pe.edu.cibertec.ws.objects.GetPuedeJubilarseRequest"/>
+    </bindings>
+    <bindings scd="tns:getPaisResponse">
+      <class ref="pe.edu.cibertec.ws.objects.GetPaisResponse"/>
+    </bindings>
+    <bindings scd="tns:getCalcularMenorRequest">
+      <class ref="pe.edu.cibertec.ws.objects.GetCalcularMenorRequest"/>
+    </bindings>
+    <bindings scd="tns:getCalcularMenorResponse">
+      <class ref="pe.edu.cibertec.ws.objects.GetCalcularMenorResponse"/>
+    </bindings>
+    <bindings scd="tns:getCalcularUtilidadesRequest">
+      <class ref="pe.edu.cibertec.ws.objects.GetCalcularUtilidadesRequest"/>
+    </bindings>
+    <bindings scd="tns:getCalcularUtilidadesResponse">
+      <class ref="pe.edu.cibertec.ws.objects.GetCalcularUtilidadesResponse"/>
+    </bindings>
+    <bindings scd="tns:getCalcularSumaRequest">
+      <class ref="pe.edu.cibertec.ws.objects.GetCalcularSumaRequest"/>
+    </bindings>
+    <bindings scd="tns:getCalcularSumaResponse">
+      <class ref="pe.edu.cibertec.ws.objects.GetCalcularSumaResponse"/>
+    </bindings>
+    <bindings scd="~tns:sexo">
+      <typesafeEnumClass ref="pe.edu.cibertec.ws.objects.Sexo"/>
+    </bindings>
+  </bindings>
+</bindings>
+

@@ -1,0 +1,81 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://www.cibertec.edu.pe/ws/objects"
+           targetNamespace="http://www.cibertec.edu.pe/ws/objects"
+          elementFormDefault="qualified">
+
+    <xs:element name="getPuedeJubilarseRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="edad" type="xs:int" />
+                <xs:element name="sexo" type="tns:sexo" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getPuedeJubilarseResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="puedeJubilarseRespuesta" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="getCalcularMenorRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="num1" type="xs:int" />
+                <xs:element name="num2" type="xs:int" />
+                <xs:element name="num3" type="xs:int" />
+                <xs:element name="num4" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getCalcularMenorResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="numeroMenor" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="getCalcularUtilidadesRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="salarioMensual" type="xs:double" />
+                <xs:element name="aniosTrabajados" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getCalcularUtilidadesResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="utilidades" type="xs:double" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getCalcularSumaRequest">
+        <xs:complexType>
+                <xs:sequence/>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="getCalcularSumaResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="suma" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="sexo">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="F"/>
+            <xs:enumeration value="M" />
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
