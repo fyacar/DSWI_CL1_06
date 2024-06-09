@@ -24,17 +24,32 @@ public class webServiceConfig extends WsConfigurerAdapter{
         return new ServletRegistrationBean<>(servlet, "/ws/*");
     }
     @Bean(name = "ejercicios")
-    public DefaultWsdl11Definition paisWsdl11Definition(XsdSchema paisSchema){
+    public DefaultWsdl11Definition ejerciciosWsdl11Definition(XsdSchema ejercicioSchema){
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
         wsdl11Definition.setPortTypeName("EjerciciosPort");
         wsdl11Definition.setLocationUri("/ws/ejercicios");
         wsdl11Definition.setTargetNamespace("http://www.cibertec.edu.pe/ws/objects");
-        wsdl11Definition.setSchema(ejercicioSchema());
+        wsdl11Definition.setSchema(ejercicioSchema);
         return wsdl11Definition;
     }
     @Bean
     public XsdSchema ejercicioSchema(){
         return new SimpleXsdSchema(new ClassPathResource("xsd/ejercicios.xsd"));
     }
+
+    @Bean(name = "usuario")
+    public DefaultWsdl11Definition usuarioWsdl11Definition(XsdSchema usuarioSchema){
+        DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
+        wsdl11Definition.setPortTypeName("UsuariosPort");
+        wsdl11Definition.setLocationUri("/ws/usario");
+        wsdl11Definition.setTargetNamespace("http://www.cibertec.edu.pe/ws/objects");
+        wsdl11Definition.setSchema(usuarioSchema);
+        return wsdl11Definition;
+    }
+    @Bean
+    public XsdSchema usuarioSchema(){
+        return new SimpleXsdSchema(new ClassPathResource("xsd/usuario.xsd"));
+    }
+
 
 }

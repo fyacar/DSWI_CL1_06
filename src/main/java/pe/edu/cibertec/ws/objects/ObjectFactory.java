@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.06.08 a las 04:07:08 PM PET 
+// Generado el: 2024.06.08 a las 05:56:07 PM PET 
 //
 
 
@@ -37,67 +37,59 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetPuedeJubilarseRequest }
+     * Create an instance of {@link PostCrearUsuarioRequest }
      * 
      */
-    public GetPuedeJubilarseRequest createGetPuedeJubilarseRequest() {
-        return new GetPuedeJubilarseRequest();
+    public PostCrearUsuarioRequest createPostCrearUsuarioRequest() {
+        return new PostCrearUsuarioRequest();
     }
 
     /**
-     * Create an instance of {@link GetPuedeJubilarseResponse }
+     * Create an instance of {@link Usuariows }
      * 
      */
-    public GetPuedeJubilarseResponse createGetPuedeJubilarseResponse() {
-        return new GetPuedeJubilarseResponse();
+    public Usuariows createUsuariows() {
+        return new Usuariows();
     }
 
     /**
-     * Create an instance of {@link GetCalcularMenorRequest }
+     * Create an instance of {@link PostCrearUsuarioResponse }
      * 
      */
-    public GetCalcularMenorRequest createGetCalcularMenorRequest() {
-        return new GetCalcularMenorRequest();
+    public PostCrearUsuarioResponse createPostCrearUsuarioResponse() {
+        return new PostCrearUsuarioResponse();
     }
 
     /**
-     * Create an instance of {@link GetCalcularMenorResponse }
+     * Create an instance of {@link GetUsuariosRequest }
      * 
      */
-    public GetCalcularMenorResponse createGetCalcularMenorResponse() {
-        return new GetCalcularMenorResponse();
+    public GetUsuariosRequest createGetUsuariosRequest() {
+        return new GetUsuariosRequest();
     }
 
     /**
-     * Create an instance of {@link GetCalcularUtilidadesRequest }
+     * Create an instance of {@link GetUsuariosResponse }
      * 
      */
-    public GetCalcularUtilidadesRequest createGetCalcularUtilidadesRequest() {
-        return new GetCalcularUtilidadesRequest();
+    public GetUsuariosResponse createGetUsuariosResponse() {
+        return new GetUsuariosResponse();
     }
 
     /**
-     * Create an instance of {@link GetCalcularUtilidadesResponse }
+     * Create an instance of {@link GetUsuarioRequest }
      * 
      */
-    public GetCalcularUtilidadesResponse createGetCalcularUtilidadesResponse() {
-        return new GetCalcularUtilidadesResponse();
+    public GetUsuarioRequest createGetUsuarioRequest() {
+        return new GetUsuarioRequest();
     }
 
     /**
-     * Create an instance of {@link GetCalcularSumaRequest }
+     * Create an instance of {@link GetUsuarioResponse }
      * 
      */
-    public GetCalcularSumaRequest createGetCalcularSumaRequest() {
-        return new GetCalcularSumaRequest();
-    }
-
-    /**
-     * Create an instance of {@link GetCalcularSumaResponse }
-     * 
-     */
-    public GetCalcularSumaResponse createGetCalcularSumaResponse() {
-        return new GetCalcularSumaResponse();
+    public GetUsuarioResponse createGetUsuarioResponse() {
+        return new GetUsuarioResponse();
     }
 
 }
